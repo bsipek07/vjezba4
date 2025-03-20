@@ -12,9 +12,9 @@ public class Main {
         String[] rijec = tekst.split("\\s+");
 
 
-        for(int i=0;i<tekst.length();i++)
+        for(int i=rijec.length-1;i>=0;i--)
         {
-            sb.append(rijec[tekst.length()-i]);
+            sb.append(rijec[i]).append(" ");
         }
         System.out.println(sb);
 
